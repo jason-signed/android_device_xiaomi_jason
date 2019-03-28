@@ -154,6 +154,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.nfc_nci=nqx.default
 
+# OEM Unlock reporting
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.oem_unlock_supported=1
+
 # OpenGapps
 GAPPS_VARIANT := mini
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
