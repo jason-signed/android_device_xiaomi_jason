@@ -154,6 +154,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.nfc_nci=nqx.default
 
+# OpenGapps
+GAPPS_VARIANT := mini
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.panel_info.sh \
