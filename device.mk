@@ -177,8 +177,8 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
 # Verity
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
-PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/bootdevice/by-name/cust
+PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/system
+PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/cust
 $(call inherit-product, build/target/product/verity.mk)
 
 # VNDK
